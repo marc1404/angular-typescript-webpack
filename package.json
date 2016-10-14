@@ -2,7 +2,9 @@
   "name": "angular-typescript",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack --watch",
+    "start": "npm run dev -- --watch",
+    "dev": "webpack --config config/webpack.dev.config.js",
+    "production": "webpack --config config/webpack.production.config.js",
     "postinstall": "typings install",
     "typings": "typings"
   },
